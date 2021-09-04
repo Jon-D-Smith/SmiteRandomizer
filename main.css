@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  background: #000e40;
+  color: #ffce00;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  height: 50vh;
+  background: #335183;
+  color: #ffce00;
+  overflow: hidden;
+}
+
+main button {
+  margin-top: 10%;
+}
+
+#container {
+  height: 15vh;
+}
+
+ul li {
+  list-style: none;
+}
+
+article {
+  background: #404040;
+  color: #ffce00;
+  overflow: hidden;
+  padding-bottom: 1rem;
+}

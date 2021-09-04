@@ -14,7 +14,7 @@ p.innerHTML = "";
 document.addEventListener(
   "onload",
   characters.map((character) => {
-    let li = document.createElement("li");
+    let li = document.createElement("p");
     li.innerHTML = `${character.name} - ${character.type}`;
     characterList.appendChild(li);
     filteredList = characters;
@@ -45,7 +45,7 @@ filters.addEventListener("change", (e) => {
   }
   characterList.innerHTML = "";
   filteredList.map((character) => {
-    let li = document.createElement("li");
+    let li = document.createElement("p");
     li.innerHTML = `${character.name} - ${character.type}`;
     characterList.appendChild(li);
   });
