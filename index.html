@@ -9,33 +9,42 @@
     <title>Smite Randomizer</title>
   </head>
   <body>
-    <h1>Smite Randomizer</h1>
-    <p>We know you can't choose, so we'll choose for you</p>
-    <form id="filters">
-      <h2>Filter options:</h2>
-      <label for="all">All:</label>
-      <input type="radio" name="filter" id="all" value="all" checked />
-      <br />
-      <label for="assassin">Assassin:</label>
-      <input type="radio" name="filter" id="assassin" value="Assassin" />
-      <br />
-      <label for="guardian">Guardian:</label>
-      <input type="radio" name="filter" id="guardian" value="Guardian" />
-      <br />
-      <label for="hunter">Hunter:</label>
-      <input type="radio" name="filter" id="hunter" value="Hunter" />
-      <br />
-      <label for="mage">Mage:</label>
-      <input type="radio" name="filter" id="mage" value="Mage" />
-      <br />
-      <label for="warrior">Warrior:</label>
-      <input type="radio" name="filter" id="warrior" value="Warrior" />
-    </form>
-    <button id="picker">Pick Character</button>
-    <h2>The character we choose is:</h2>
-    <div id="container"></div>
-    <div>
-      <ul id="characters"></ul>
+    <div class="wrapper">
+      <header>
+        <h1>Smite Randomizer</h1>
+        <p>We know you can't choose, so we'll choose for you</p>
+        <form id="filters">
+          <h2>Filter options:</h2>
+          <label for="all">All:</label>
+          <input type="radio" name="filter" id="all" value="all" checked />
+          <br />
+          <label for="assassin">Assassin:</label>
+          <input type="radio" name="filter" id="assassin" value="Assassin" />
+          <br />
+          <label for="guardian">Guardian:</label>
+          <input type="radio" name="filter" id="guardian" value="Guardian" />
+          <br />
+          <label for="hunter">Hunter:</label>
+          <input type="radio" name="filter" id="hunter" value="Hunter" />
+          <br />
+          <label for="mage">Mage:</label>
+          <input type="radio" name="filter" id="mage" value="Mage" />
+          <br />
+          <label for="warrior">Warrior:</label>
+          <input type="radio" name="filter" id="warrior" value="Warrior" />
+        </form>
+      </header>
+      <main>
+        <button id="picker">Pick Character</button>
+        <h2>The character we choose is:</h2>
+        <div id="container"></div>
+      </main>
+      <article>
+        <h2>Your potential picks:</h2>
+        <div>
+          <ul id="characters"></ul>
+        </div>
+      </article>
     </div>
     <script src="scripts/characters.js"></script>
     <script src="scripts/index.js"></script>
