@@ -4,12 +4,10 @@ const characterList = document.getElementById("characters")
 
 
 const p = document.createElement('p')
-
 p.innerHTML = ""
 picker.addEventListener("click", (e) => {
     const random = Math.floor(Math.random() * characters.length)
-    
-    p.innerHTML = `<h2>${characters[random].name}</h2>`
+    p.innerHTML = `<h3>${characters[random].name}</h3>`
     container.innerHTML = ""
     container.appendChild(p)
 })
