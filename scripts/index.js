@@ -18,14 +18,11 @@ document.addEventListener(
     li.innerHTML = `${character.name} - ${character.type}`;
     characterList.appendChild(li);
     filteredList = characters;
-    console.log(filteredList);
   })
 );
 
 picker.addEventListener("click", (e) => {
   const random = Math.floor(Math.random() * filteredList.length);
-  console.log(random);
-
   p.innerHTML = `<h3>${filteredList[random].name}</h3>`;
   container.innerHTML = "";
   container.appendChild(p);
@@ -36,23 +33,20 @@ filters.addEventListener("change", (e) => {
   for (let i = 0, length = filters.length; i < length; i++) {
     if (filters[i].checked) {
       filter = filters[i].value;
-      filteredList = characters.filter((character) => character.type == filter);
+      if (filter == "all") {
+        filteredList = characters;
+      } else {
+        filteredList = characters.filter(
+          (character) => character.type == filter
+        );
+      }
       break;
     }
   }
-
   characterList.innerHTML = "";
-  if (filter == "all") {
-    characters.map((character) => {
-      let li = document.createElement("li");
-      li.innerHTML = `${character.name} - ${character.type}`;
-      characterList.appendChild(li);
-    });
-  } else {
-    filteredList.map((character) => {
-      let li = document.createElement("li");
-      li.innerHTML = `${character.name} - ${character.type}`;
-      characterList.appendChild(li);
-    });
-  }
+  filteredList.map((character) => {
+    let li = document.createElement("li");
+    li.innerHTML = `${character.name} - ${character.type}`;
+    characterList.appendChild(li);
+  });
 });
