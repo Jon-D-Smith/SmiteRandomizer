@@ -9,6 +9,7 @@ let filter = "";
 let filteredList;
 // Create elements
 const p = document.createElement("p");
+p.classList.add("gods-name");
 p.innerHTML = "";
 
 document.addEventListener(
@@ -23,7 +24,7 @@ document.addEventListener(
 
 picker.addEventListener("click", (e) => {
   const random = Math.floor(Math.random() * filteredList.length);
-  p.innerHTML = `<h3>${filteredList[random].name}</h3>`;
+  p.innerHTML = `${filteredList[random].name}`;
   container.innerHTML = "";
   container.appendChild(p);
 });
