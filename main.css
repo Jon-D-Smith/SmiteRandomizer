@@ -44,3 +44,14 @@ article {
   overflow: hidden;
   padding-bottom: 1rem;
 }
+
+#filters {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 3rem;
+}
