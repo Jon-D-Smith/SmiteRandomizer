@@ -58,5 +58,11 @@ article {
 
 .gods-name {
   font-size: 32px;
-  display: inline;
+  display: inline-block;
+}
+
+.headshot {
+  width: 7%;
+  display: block;
+  margin: 0 auto;
 }

@@ -12,6 +12,8 @@ const p = document.createElement("p");
 p.classList.add("gods-name");
 p.innerHTML = "";
 
+const img = document.createElement("img");
+img.classList.add("headshot");
 document.addEventListener(
   "onload",
   characters.map((character) => {
@@ -25,8 +27,10 @@ document.addEventListener(
 picker.addEventListener("click", (e) => {
   const random = Math.floor(Math.random() * filteredList.length);
   p.innerHTML = `${filteredList[random].name}`;
+  img.src = filteredList[random].url;
   container.innerHTML = "";
   container.appendChild(p);
+  container.appendChild(img);
 });
 
 filters.addEventListener("change", (e) => {
