@@ -18,8 +18,15 @@ document.addEventListener(
   "onload",
   characters.map((character) => {
     let li = document.createElement("p");
+    const img = document.createElement("img");
+    img.classList.add("headshot");
+    let div = document.createElement("div");
+    div.classList.add("icons");
     li.innerHTML = `${character.name} - ${character.type}`;
-    characterList.appendChild(li);
+    img.src = character.url;
+    div.appendChild(li);
+    div.appendChild(img);
+    characterList.appendChild(div);
     filteredList = characters;
   })
 );
