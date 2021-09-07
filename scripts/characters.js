@@ -192,7 +192,7 @@ const characters = [
   {
     name: "Erlang Shen",
     type: "Warrior",
-    url: "data:image/gif;base64,R0lGODlhAQABAIABAAAAAP///yH5BAEAAAEALAAAAAABAAEAQAICTAEAOw%3D%3D",
+    url: "https://static.wikia.nocookie.net/smite_gamepedia/images/0/01/SkinArt_ErlangShen_Default.jpg/revision/latest/scale-to-width-down/250?cb=20160630021258",
   },
   {
     name: "Eset",
